@@ -173,3 +173,16 @@ nav{
         transform: translate(0%,10%);
     }
 }
+
+.page2{
+    padding-top: 8vw;
+    min-height: 100vh;
+    width: 100%;
+    background-color: red;
+}
+
+.moving-text{
+    display: flex;
+    gap: 2vw;
+    font-size: 4.7vw;
+}
