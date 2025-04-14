@@ -2,6 +2,11 @@
     font-family: neue;
     src: url(./NeueHaasDisplayMediu.ttf);
 }
+@font-face {
+    font-family: neue-light;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
 
 *{
     margin: 0;
@@ -178,11 +183,80 @@ nav{
     padding-top: 8vw;
     min-height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: #EFEAE3;
 }
 
 .moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+    
+}
+
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+
+.moving-text h1{
+    font-size: 9vw;
+    display: inline-block;              /*It will not include the empty space*/
+    
+}
+
+.con{
+    white-space: nowrap;
+    display: inline-block;
+    /* background-color: aqua; */
+    animation: moving 10s infinite linear ;
+}
+
+.gap{
+    height: 4.5vw;
+    width: 4.5vw;
+    border-radius: 50%;
+    background-color: #FE380D;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes moving{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.page2-bottom{
+    height: 95vh;
+    width: 100%;
+    padding: 3vw 5vw;
+    /* background-color: aliceblue; */
     display: flex;
-    gap: 2vw;
-    font-size: 4.7vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page2-bottom h1{
+    font-size: 4.4vw;
+    width: 58vw;
+    line-height: 4.2vw;
+}
+
+.bottom-right{
+    padding-top: 16vw;
+    padding-right: 1vw;
+    height: 100%;
+    width: 20vw;
+}
+
+.bottom-right img{
+    width: 100%;
+    border-radius: 2vh;
+    margin-bottom: 3vw;
+}
+
+.bottom-right p{
+    font-family: neue-light;
+    font-size: 15px;
 }
