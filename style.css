@@ -184,6 +184,7 @@ nav{
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
+    position: relative;
 }
 
 .moving-text{
@@ -228,7 +229,7 @@ nav{
 }
 
 .page2-bottom{
-    height: 95vh;
+    min-height: 95vh;
     width: 100%;
     padding: 3vw 5vw;
     /* background-color: aliceblue; */
@@ -241,6 +242,7 @@ nav{
     font-size: 4.4vw;
     width: 58vw;
     line-height: 4.2vw;
+    z-index: 5;
 }
 
 .bottom-right{
@@ -259,4 +261,31 @@ nav{
 .bottom-right p{
     font-family: neue-light;
     font-size: 15px;
+}
+
+.circle{
+    position: absolute;
+    height: 32vw;
+    width: 32vw;
+    border-radius: 50%;
+    background: linear-gradient(to top right,#ff3508,#f88e24);
+    top: 60%;
+    left: 27%;
+    filter: blur(20px);
+    animation: circle 5s infinite alternate ease;
+}
+
+@keyframes circle{
+    from{
+        transform: translate(8%,-8%) skew(0deg);
+    }
+    to{
+        transform: translate(-10%,10%) skew(-10deg);
+    }
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
 }
