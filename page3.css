@@ -1,0 +1,115 @@
+@font-face {
+    font-family: neue;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: neue-light;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neue;
+}
+
+*::selection{
+    color: white;
+    background-color: black;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+}
+
+.title{
+    position: relative;
+    padding: 3vw 2vw;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title p{
+    font-size: 1.2vw;
+    /* font-weight: ; */
+}
+
+.title .gola{
+    
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #FE380D;
+}
+
+.elem{
+    position: relative;
+    height: 9vw;
+    width: 100%;
+    border-bottom: 1px solid #ceccca;
+    padding: 1vw 2vw;
+    overflow: hidden;
+}
+
+.text{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text h1{
+    font-size: 3vw;
+}
+
+.text div h4, p{
+    z-index: 9;
+    font-family: neue-light;
+    font-size: 1.6vw;
+    text-align: right;
+}
+
+.text div p{
+    color:#9a9793;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FF9831;
+    left:0;
+    top: -100%;
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
+.elem:hover .overlay{
+    opacity: 1;
+    top: 0;
+}
+
+.elem:hover{
+    cursor: pointer;
+}
+
+.fixed-image{
+    height: 30vw;
+    width: 23vw;
+    /* background-color: red; */
+    border-radius: 1.5vw;
+    position: fixed;
+    left: 55%;
+    top: 21%;
+    z-index: 9;
+    display: none;
+    background-size: cover;             /* ensures the image fully covers the container without stretching.*/
+}

@@ -259,8 +259,9 @@ nav{
 }
 
 .bottom-right p{
+    text-align: left;
     font-family: neue-light;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .circle{
@@ -282,60 +283,4 @@ nav{
     to{
         transform: translate(-10%,10%) skew(-10deg);
     }
-}
-
-.page3{
-    min-height: 100vh;
-    width: 100%;
-    background-color: #EFEAE3;
-}
-
-.elem{
-    position: relative;
-    height: 9vw;
-    width: 100%;
-    border-bottom: 1px solid #ceccca;
-    padding: 1vw 2vw;
-    overflow: hidden;
-}
-
-.text{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    z-index: 9;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.text h1{
-    font-size: 3vw;
-}
-
-.text div h4, p{
-    z-index: 9;
-    font-family: neue-light;
-    font-size: 1.6vw;
-    text-align: right;
-}
-
-.text div p{
-    color:#9a9793;
-}
-
-.overlay{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #FF9831;
-    left:0;
-    top: -100%;
-    opacity: 0;
-    transition: all ease 0.4s;
-}
-
-.elem:hover .overlay{
-    opacity: 1;
-    top: 0;
 }
