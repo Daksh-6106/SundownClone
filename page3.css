@@ -47,6 +47,10 @@
     background-color: #FE380D;
 }
 
+.elem-container{
+    margin: 2vw 0;
+}
+
 .elem{
     position: relative;
     height: 9vw;
@@ -112,4 +116,42 @@
     z-index: 9;
     display: none;
     background-size: cover;             /* ensures the image fully covers the container without stretching.*/
+}
+
+.but {
+    padding: 2vw;
+    display: flex;
+}
+
+.but h4{
+    position: relative;
+    font-size: 18px;
+    padding: 1vw 1.5vw;
+    border: #0000009a 1px solid;
+    border-radius: 50px;
+    font-weight: 500;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.but h4::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border-radius: 50px;
+    top: 100%;
+    left: 0;
+    transition: all ease 0.4s;
+    z-index: -1;
+}
+
+.but h4:hover::after{
+    top: 0;
+}
+
+.but h4:hover{
+    cursor: pointer;
+    color: white;
 }
