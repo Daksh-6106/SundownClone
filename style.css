@@ -86,7 +86,7 @@ nav{
     z-index: 5;
 }
 
-.nav-right h4 a:hover{
+.nav-right a:hover{
     color: white;
 }
 

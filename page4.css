@@ -23,4 +23,50 @@
 .page4{
     min-height: 100vh;
     width: 100%;
+    padding: 5vw 0;
+}
+
+.box{
+    height:105vh;
+    width: 96%;
+    background-color: black;
+    margin: 0 2vw;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box img{
+    height: 100%;
+    width: 56%;
+    /* object-fit: cover; */
+    border-radius: 30px;
+}
+
+.box .left{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 10vw;
+}
+
+.options h2{
+    font-family: 'neue-light';
+}
+
+.left .desc p{
+    margin: 1vw;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+.box .left .options{
+    font-weight: 500;
+    color: white;
+    font-size: 3vw;
+    border-left: 2px solid #504A45;
+    padding-left: 1.5vw;
 }
