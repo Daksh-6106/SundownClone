@@ -23,7 +23,13 @@
 body,html{
     height: 100vh;
     width: 100%;
-    background-color: #EFEAE3;
+    /* background-color: #EFEAE3; */
+}
+
+.main{
+    position: relative;
+    z-index: 10;
+    /* background-color: black; */
 }
 
 .page1{
@@ -31,6 +37,7 @@ body,html{
     width: 100%;
     position: relative;
     padding: 0 2.5vw;
+    background-color: #EFEAE3;
 }
 
 nav{
@@ -283,4 +290,27 @@ nav{
     to{
         transform: translate(-10%,10%) skew(-10deg);
     }
+}
+
+
+.footer{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.footer h1{
+    position: absolute;
+    bottom: 10%;
+    font-size: 23vw;
+    line-height: 20vw;
+    border-bottom:2px solid #60564E;
 }
